@@ -1,0 +1,26 @@
+{
+  "name": "template.nodejs.appserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardoap/template.nodejs.appserver.git"
+  },
+  "author": "Leonardo A. Paiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardoap/template.nodejs.appserver/issues"
+  },
+  "homepage": "https://github.com/leonardoap/template.nodejs.appserver#readme",
+  
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.9.0",
+    "tedious": "^14.0.0"
+  }
+}
