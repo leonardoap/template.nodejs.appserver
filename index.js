@@ -102,11 +102,12 @@ api.delete('/api/cliente', async (req, res) => {
         //Atualiza os dados do cliente
         const clienteDeletado = await db.Clientes.destroy({ where: { id: id } });
         if(!clienteDeletado) throw 'O cliente informado não foi econtrado.'
-        
+
         return res.json(clienteDeletado);
     } catch (error) {
         return res.status(400).send({ message: 'Ocorreu um erro ao tentar deletar o cliente.', error });
     }
+    
 });
 
 //Iniciar o servidor da API na porta 3000
